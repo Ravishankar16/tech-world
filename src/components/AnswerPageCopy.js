@@ -96,6 +96,17 @@ const AnswerPage = ({ queList }) => {
         onChange={(e) => setAnswerText(e.target.value)}
         placeholder="Your Answer"
       />
+      <div>
+        <label>Select User: </label>
+        <select value={selectedUser} onChange={(e) => setSelectedUser(e.target.value)}>
+          <option value="">Select User</option>
+          {queList.users.map((user) => (
+            <option key={user.id} value={user.id}>
+              {user.displayName}
+            </option>
+          ))}
+        </select>
+      </div>
       <button onClick={submitAnswer}>Submit Answer</button>
     </div>
   );

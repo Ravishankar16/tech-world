@@ -2,22 +2,22 @@ import './App.css';
 import Head from './components/Head';
 import Body from './components/Body';
 import ToPushFetch from './components/ToPushFetch';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import MainContainer from './components/MainContainer';
 import AnswerPage from './components/AnswerPage';
-import queList from './queList'; // Import your queList data
+
 
 const appRouter = createBrowserRouter([{
   path: "/",
-  element: <Body />,
+  element: <Body/>,
   children: [
     {
       path: "/",
-      element: <MainContainer />,
+      element: <MainContainer/>,
     },
     {
-      path: "answer/:questionId", // Updated path with a parameter for questionId
-      element: <AnswerPage queList={queList} />, // Pass queList as a prop
+      path: "answer",
+      element:<AnswerPage/>,
     }
   ]
 
@@ -26,7 +26,7 @@ const appRouter = createBrowserRouter([{
 function App() {
   return (
     <div>
-      <Head />
+      <Head/>
       <RouterProvider router={appRouter} />
       {/* <ToPushFetch/> */}
     </div>
