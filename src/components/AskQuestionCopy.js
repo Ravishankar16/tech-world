@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-const AskQuestion = ({ onSubmitQuestion }) => {
+const AskQuestionCopy = ({ onSubmitQuestion }) => {
     const [showModal, setShowModal] = useState(false);
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
@@ -36,4 +36,4 @@ const AskQuestion = ({ onSubmitQuestion }) => {
   );
 };
 
-export default AskQuestion;
+export default AskQuestionCopy;

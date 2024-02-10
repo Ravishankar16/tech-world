@@ -1,14 +1,11 @@
 import React from 'react'
-import AskQuestion from './AskQuestion'
 import QuestionList from './QuestionList'
-import QuestionCard from './QuestionCard'
-
+import QuestionListCopy2 from './QuestionListCopy2'
 const MainContainer = () => {
   return (
     <div className='col-span-11'>
-        <AskQuestion/>
-        {/* <QuestionCard/> */}
         <QuestionList/>
+        {/* <QuestionListCopy2/> */}
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Modal from './Modal'
 
 import queList from '../queList'
 import AskQuestion from './AskQuestion'
-// import AskQuestionCopy from './AskQuestionCopy'
+import AskQuestionCopy from './AskQuestionCopy'
 
 export default function QuestionListCopy2(){
     const initialQuestion = {
@@ -166,7 +166,7 @@ export default function QuestionListCopy2(){
               <button className=' border border-gray-400 py-2 px-5 rounded-r-full bg-gray-100' 
                 onClick={()=>handleSearch()} >Search</button>
             </div>
-            <AskQuestion onSubmitQuestion={handleSubmitQuestion} />
+            <AskQuestionCopy onSubmitQuestion={handleSubmitQuestion} />
             {/* <div>
                 <button className='px-5 py-2 m-2 bg-gray-300 font-bold text-black-50 rounded-lg hover:bg-gray-400' 
                   onClick={() => handleFilter("javascript")}>Javascript</button>
