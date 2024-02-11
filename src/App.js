@@ -1,7 +1,6 @@
 import './App.css';
 import Head from './components/Head';
 import Body from './components/Body';
-import ToPushFetch from './components/ToPushFetch';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContainer from './components/MainContainer';
 import AnswerPage from './components/AnswerPage';

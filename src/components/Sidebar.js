@@ -4,32 +4,33 @@ import {Link} from "react-router-dom"
 
 const Sidebar = () => {
   return (
-    <div className='p-5 shadow-lg w-48'>
+    <div className='p-5 shadow-lg w-48 '>
         <ul>
-            <Link to="/"><li>Home</li></Link>
-            <li>Home</li>
-            <li>Home</li>
+            <Link to="/"><li className='text-lg font-bold'>Home</li></Link>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Community</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Forum</li>
         </ul>
-        <h1 className='font-bold'>Categories</h1>
+        <h1 className='font-bold pt-1'>Features</h1>
         <ul>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>React</li>
-            <li>Node</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Top Users</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Answered</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Unanswered</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Recent</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Solved</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Unsolved</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Most Liked</li>
         </ul>
-        <h1 className='font-bold pt-5'>Top Rated</h1>
+        <h1 className='font-bold pt-2'>Categories</h1>
         <ul>
-            <li>Users</li>
-            <li>Answered</li>
-            <li>Unanswered</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>React</li>
-            <li>Node</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Javascript</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Python</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Java</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>C</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>C++</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>React</li>
+            <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Node</li>
         </ul>
+        
     </div>
   )
 }
