@@ -63,41 +63,41 @@ const AnswerPage = ({ queList }) => {
   }
 
   return (
-    <div>
-      <h1>{question.title}</h1>
-      <p>{question.content}</p>
+    <div className='px-10'>
+      <h1 className=' pt-6 text-2xl font-bold text-blue-500'>{question.title}</h1>
+      <p className='w-3/4 px-5 pt-2'>{question.content}</p>
 
-      <h2>Answers</h2>
-      <ul>
+      <h2 className='text-xl font-bold text-emerald-500'>Answers</h2>
+      <ul >
         {question.answers.map((answer) => (
-          <li key={answer.id}>
+          <li key={answer.id} className='px-10'>
             <p>{answer.content}</p>
             <ul>
               {answer.comments.map((comment) => (
-                <li key={comment.id}>
+                <li key={comment.id} className='px-10'>
                   <p>{comment.content}</p>
                 </li>
               ))}
             </ul>
-            <input
+            <input className='px-10'
               type="text"
               value={commentText}
               onChange={(e) => setCommentText(e.target.value)}
               placeholder="Add a comment"
             />
-            <button onClick={() => submitComment(answer.id)}>Submit Comment</button>
+            <button className='text-emerald-500 font-bold px-2' onClick={() => submitComment(answer.id)}>Reply</button>
           </li>
         ))}
       </ul>
-
-      <input
+      <input className='border border-gray-400'
         type="text"
         value={answerText}
         onChange={(e) => setAnswerText(e.target.value)}
         placeholder="Your Answer"
       />
-      <button onClick={submitAnswer}>Submit Answer</button>
-    </div>
+      
+      <button className='text-emerald-500 font-bold px-2 ' onClick={submitAnswer}>Answer</button>
+      </div>
   );
 };
 

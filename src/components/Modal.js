@@ -45,7 +45,7 @@ const Modal = ({onClose, handleAskQuestion  }) => {
                     {/* <input type='text' value={content} placeholder='explain your question in detail' onChange={(e)=>setContent(e.target.value)}/><br/> */}
                     <label className='text-blue-500'>Category:</label><br/>
                     <input className='w-full px-4 py-3 text-sm text-black border-gray-300 rounded-ms' type='text' value={category} placeholder='e.g Javascript,React' onChange={(e)=>setCategory(e.target.value)}/><br/>
-                    <button className='mt-4 w-1/4 flex items-center bg-blue-600 text-white justify-center gap-2 px-5 py-3 font-medium rounded-md' type='button' onClick={submitQuestion}>Submit</button>
+                    <button className='mt-4 w-1/4 flex items-center bg-blue-600 text-white justify-center gap-2 px-5 py-3 font-medium rounded-md' type='button' onClick={submitQuestion}>Add Question</button>
             </form>
             </div>
             
