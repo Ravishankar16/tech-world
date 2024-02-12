@@ -6,6 +6,7 @@ const Sidebar = () => {
   return (
     <div className='p-5 shadow-lg w-48 '>
         <ul>
+            {/* List of features */}
             <Link to="/"><li className='text-lg font-bold'>Home</li></Link>
             <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Community</li>
             <li className='hover:bg-blue-400 hover:font-bold hover:text-white'>Forum</li>
